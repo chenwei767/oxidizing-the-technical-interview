@@ -10,7 +10,7 @@
 #![feature(intrinsics)]
 #![feature(untagged_unions)]
 #![no_core]
-#[link(name = "System")]
+#[link(name = "c")]
 extern "C" {
     fn printf(format: *const c_char, ...) -> c_int;
 }
